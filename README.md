@@ -1,0 +1,281 @@
+# html-project
+#travel enthusiast blogger home page code
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Blog</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+       background-image: url("https://wallpaperaccess.com/full/1192224.jpg");
+    }
+
+    /* Global styles for links */
+    a {
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s;
+    }
+
+    a:hover {
+        color: #3498db;
+    }
+
+    /* Header styles */
+    .main_section {
+        position: relative;
+    }
+
+    .bg_image_section {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav_section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .logo_link {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .nav_section ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_section li {
+        margin-right: 20px;
+    }
+
+    .nav_section a {
+        color: #333;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .nav_section a:hover {
+        color: #3498db;
+    }
+
+    #toggleIcon {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Hero Section styles */
+    .hero_section {
+        padding: 150px 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .text_section {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .text_section span {
+        color: #3498db;
+    }
+
+    .btn_group {
+        margin-top: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .bg-btn {
+        background-color: #3498db;
+    }
+
+    .bg-btn:hover {
+        background-color: #2980b9;
+    }
+
+    .border-btn {
+        background-color: transparent;
+        border: 2px solid #fff;
+        margin-left: 10px;
+    }
+
+    .border-btn:hover {
+        background-color: #fff;
+        color: #333;
+    }
+
+    /* About Section styles */
+    .about_section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 100px 20px;
+    }
+
+    .image_section {
+        flex: 1;
+    }
+
+    .about_img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .content_section {
+        flex: 1;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .tag_section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .tag_title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .tag_indicator {
+        width: 40px;
+        height: 2px;
+        background-color: #3498db;
+        position: relative;
+    }
+
+    .line {
+        width: 100%;
+        height: 100%;
+        background-color: #ccc;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .circle {
+        width: 12px;
+        height: 12px;
+        background-color: #3498db;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about_title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .about_desc {
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .about_bt {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: #3498db;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .about_bt:hover {
+        background-color: #2980b9;
+    }
+
+</style>
+
+<body>
+    
+    <div class="main_section">
+        <div class="bg_image_section">
+            <div class="nav_section">
+                <a href="travel blogger.html" class="logo_link">
+                    Travel <i class="fa-solid fa-video"></i>
+                </a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="abouttb.html">About</a></li>
+                    <li><a href="Our Destinations.html">Our Popular Destination</a></li>
+                    <li><a href="blog.html">our Blogs</a></li>
+                </ul>
+                <div id="toggleIcon">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+            <div class="hero_section">
+                <div class="text_section">
+                    Let's Explore the World <br> <span></span>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="about_section">
+            <div class="image_section" data-aos="flip-left">
+                <img src="https://www.bloggingwp.com/wp-content/uploads/2018/01/Travel-blog.jpeg" alt="About Image" class="about_img">
+            </div>
+            <div class="content_section" data-oas="flip-Right">
+                <div class="tag_section">
+                    <h6 class="tag_title">About Us</h6>
+                    <div class="tag_indicator">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <h6 class="about_title">
+                    We Travel to Explore the World !
+                </h6>
+                <p class="about_desc">We live in a wonderful world that is full of beauty, charm and adventure. There is no end to the adventures we can have if only we seek them with our eyes open.
+                   
+                </p>
+                <button class="btn about_bt bg_btn">
+                    know more <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
