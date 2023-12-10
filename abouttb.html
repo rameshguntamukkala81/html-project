@@ -1,0 +1,289 @@
+<body>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.divider {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.travel_categories_section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.tag_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tag_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.tag_indicator {
+    width: 40px;
+    height: 2px;
+    background-color: #3498db;
+    position: relative;
+}
+
+.line {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.desc {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.category_box {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+.cat_img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cat_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.join_section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.join_title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.journey_btn {
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.journey_btn:hover {
+    background-color: #2980b9;
+}
+
+.popular_destination {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.destination_section {
+    display: flex;
+    justify-content: center;
+}
+
+.destination_box {
+    margin: 0 20px;
+}
+
+.destination_img_box {
+    position: relative;
+}
+
+.destination_img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.destination_category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.destination_detail {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.destination_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.destination_duration {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.destination_popular_places {
+    display: flex;
+    margin-top: 10px;
+}
+
+.tag {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.blog_section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.blog_section_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.blog_box {
+    max-width: 300px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+.blog_img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.blog_data {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.blog_title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blog_desc {
+    color: #555;
+    margin-top: 10px;
+}
+
+.read_btn {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.read_btn:hover {
+    background-color: #2980b9;
+}
+
+.contact_section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+    </style>
+<hr class="divider">
+            <div class="travel_categories_section">
+                <div class="tag_section tag_center">
+                    <h6 class="tag_title">Our Journey</h6>
+                    <div class="tag_indicator">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <h6 class="desc">We travelled the following travel categories</h6>
+                <div class="category_box">
+                    <img src="https://blog.raynatours.com/wp-content/uploads/2016/11/Merlion-Park.jpg" alt="Category Image" class="cat_img">
+                    <div class="cat_title">Singapore</div>
+                </div>
+                <div class="category_box">
+                    <img src="https://lh3.googleusercontent.com/fzIG_5PU7js7CJ4x6P970mgGy92aTPg5_OVfyLqkpoZkEIAmph6Erp_USyRJkdRzws_H2q2lLPrKtFd17XTm5yyXfriqZxIOwzuY3Sib7s_OLh0=s0" alt="Category Image" class="cat_img">
+                    <div class="cat_title">Paris</div>
+                </div>
+                <div class="category_box">
+                    <img src="https://static.insydo.com/wp-content/uploads/2018/11/19113457/teaser-image-616-1490857450995243654-Cropped.jpg" alt="adventure" class="cat_img">
+                    <div class="cat_title">Dubai</div>
+                </div>
+                <div class="category_box">
+                    <img src="https://italian-architecture.info/wp-content/uploads/2016/12/Top-tourist-attractions-in-Italy.jpg" alt="Category Image" class="cat_img">
+                    <div class="cat_title">italy</div>
+                </div>
+                <div class="category_box">
+                    <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Alleppey.jpg" alt="adventure" class="cat_img">
+                    <div class="cat_title">kerala</div>
+                </div>
+            </div>
+            <div class="join_section">
+               <h6 class="join_title">
+                    Join Our Travel Community <br> to Explore with Us.
+               </h6> 
+               <button class="bg_btn journey_btn">
+                Join Now <i class="fa-solid fa-arrow-right"></i>
+               </button>
+
+            </div>
+          
+                    
+                
+
+          
